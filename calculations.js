@@ -236,7 +236,7 @@ function calculate_depletion_width(d1, d2){
 		{ data: d1.map((pair, index) => [pair[0], N_tot[index]]), color: "rgb(0, 0, 0)", shadowSize:0, lines: {show:true}, label: "total"}
 		//,{ data: [[d1[junction_index][0], Math.min(...N_tot)], [d1[junction_index][0], Math.max(...N_tot)]], color: "rgb(255, 0, 0)", shadowSize: 0, lines: { show: true, lineWidth: 2 }, label: "Junction"
 		];
-
+		console.log(voltage_depletion_width_tot);
 		$.plot($("#depletion_width"), depletion_width, options_depletion_width);
 		$.plot($("#doping_profile"), doping_profile, options_doping_profile);
 		console.log({firstArray: N_tot, secondArray: d1[0]});
