@@ -8,10 +8,13 @@ body {
     line-height: 1.6;
 }
 
-/* Large screen layout with 350px margin */
+/* Large screen layout with 350px side margins */
 @media (min-width: 1200px) {
     body {
-        margin: 350px;
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
