@@ -130,6 +130,7 @@ h2 {
 
 /* Help section */
 #help {
+    display: none; /* Hidden by default */
     margin-top: 20px;
     padding: 15px;
     background-color: #f9f9f9;

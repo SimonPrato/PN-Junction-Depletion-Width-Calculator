@@ -112,11 +112,13 @@ function toggleHelp() {
     helpText += "</ul></td></tr></table>";
     
     helpElement.innerHTML = helpText;
+    helpElement.style.display = 'block';
     helpButton.value = "-?";
     helpDisplayed = true;
   } else {
     // Hide help
     helpElement.innerHTML = "";
+    helpElement.style.display = 'none';
     helpButton.value = "?";
     helpDisplayed = false;
   }
