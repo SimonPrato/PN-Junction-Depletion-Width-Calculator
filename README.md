@@ -2,11 +2,11 @@
 
 An interactive web-based tool for analyzing PN junctions with arbitrary doping profiles in semiconductor physics. This calculator visualizes depletion width, electric field, and charge density distributions using the depletion approximation model.
 
-## 🔬 Overview
+## Overview
 
 This project provides a comprehensive simulation of PN junction behavior, allowing users to define custom donor (N_D) and acceptor (N_A) concentration profiles and calculate the resulting depletion region characteristics under reverse-biased conditions.
 
-## ✨ Features
+## Features
 
 - **Custom Doping Profiles**: Define arbitrary mathematical functions for donor and acceptor concentrations
 - **Interactive Real-Time Visualization**: Dual-plot display showing:
@@ -15,11 +15,8 @@ This project provides a comprehensive simulation of PN junction behavior, allowi
 - **Preset Junction Configurations**: Quick-load buttons for:
   - Abrupt junction (step function doping)
   - Linearly graded junction
-- **Comprehensive Mathematical Support**: Includes trigonometric, exponential, logarithmic functions, and the Heaviside step function
-- **Physical Accuracy**: Calculations based on fundamental semiconductor physics using the depletion approximation
-- **Interactive Help System**: Built-in documentation for supported mathematical functions
 
-## 🧮 Physics Background
+## Physics Background
 
 ### Depletion Approximation Model
 
@@ -53,11 +50,11 @@ The tool calculates three key distributions:
 - Relative permittivity (Silicon): εᵣ = 12
 - Combined permittivity: ε = εᵣ × ε₀
 
-## 🚀 Live Demo
+## Live Demo
 
 Access the interactive calculator at: [https://simonprato.github.io/pn-depletion-width/](https://simonprato.github.io/pn-depletion-width/)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 PN-Junction-Depletion-Width-Calculator/
@@ -79,7 +76,7 @@ PN-Junction-Depletion-Width-Calculator/
 └── README.md                       # This file
 ```
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Frontend**: HTML5, CSS3
 - **JavaScript Libraries**:
@@ -88,7 +85,7 @@ PN-Junction-Depletion-Width-Calculator/
   - MathJax 2.7.1 - Mathematical notation rendering
 - **Architecture**: Modular JavaScript with separation of concerns
 
-## 📖 Usage Guide
+## Usage Guide
 
 ### Basic Usage
 
@@ -151,7 +148,7 @@ Range: x = 0 to 10 µm
   - Concentration: m⁻³
   - Voltage: Volts (V)
 
-## 🔍 How It Works
+## How It Works
 
 ### Calculation Algorithm
 
@@ -173,7 +170,7 @@ Range: x = 0 to 10 µm
 - **Field Balancing**: Iteratively extends depletion region to maintain field continuity
 - **Interpolation**: Linear interpolation for smooth voltage-width curves
 
-## 🎨 Visualization Details
+## Visualization Details
 
 ### Depletion Width Plot (Left)
 - **X-axis**: Depletion width in µm
@@ -191,7 +188,7 @@ Range: x = 0 to 10 µm
   - Red: Acceptor concentration (N_A)
   - Black: Net concentration (N_A - N_D)
 
-## ⚠️ Limitations and Assumptions
+## Limitations and Assumptions
 
 - **Single Junction**: Only handles one PN junction per profile
 - **Depletion Approximation**: Assumes complete depletion within W
@@ -200,7 +197,7 @@ Range: x = 0 to 10 µm
 - **Temperature**: Room temperature (300K) is assumed
 - **Abrupt Transitions**: Mathematical discontinuities may need careful handling
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
@@ -210,27 +207,8 @@ Contributions, issues, and feature requests are welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is open source and available for educational and research purposes.
-
-## 👨‍💻 Author
-
-Simon Prato
-
-## 🙏 Acknowledgments
-
-- Based on fundamental semiconductor physics principles
-- Uses the depletion approximation model for PN junctions
-- Inspired by educational tools for semiconductor device physics
-
-## 📚 References
-
-For more information on PN junction physics:
-- Streetman & Banerjee, "Solid State Electronic Devices"
-- Sze & Ng, "Physics of Semiconductor Devices"
-- Neamen, "Semiconductor Physics and Devices"
-
----
 
 **Note**: For best results, ensure your doping profiles create exactly one PN junction (one sign change in N_A - N_D) within the specified spatial range.
