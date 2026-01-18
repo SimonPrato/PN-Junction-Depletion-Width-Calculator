@@ -4,8 +4,15 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 350px;
+    margin: 20px;
     line-height: 1.6;
+}
+
+/* Large screen layout with 350px margin */
+@media (min-width: 1200px) {
+    body {
+        margin: 350px;
+    }
 }
 
 h2 {
